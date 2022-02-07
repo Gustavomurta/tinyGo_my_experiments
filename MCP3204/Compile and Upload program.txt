@@ -24,3 +24,19 @@ Press RESET button and LOAD Button. Then release RESET and LOAD Buttons to uploa
 
 C:\Users\jgust\tinygo\programas\mcp3204>tinygo flash -target=pico main.go
 
+C:\Users\jgust\tinygo\programas\mcp3204>dir
+ O volume na unidade C não tem nome.
+ O Número de Série do Volume é 709A-B58F
+
+ Pasta de C:\Users\jgust\tinygo\programas\mcp3204
+
+25/01/2022  23:10    <DIR>          .
+25/01/2022  23:10    <DIR>          ..
+25/01/2022  23:08                24 go.mod
+26/01/2022  01:51             2.219 main.go
+26/01/2022  01:51             1.486 TinyGo MCP3204 Rasp PIco 2022_01_25.txt
+               3 arquivo(s)          3.729 bytes
+               2 pasta(s)   52.518.858.752 bytes disponíveis
+
+C:\Users\jgust\tinygo\programas\mcp3204>
+
