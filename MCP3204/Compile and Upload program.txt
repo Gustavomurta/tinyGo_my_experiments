@@ -1,0 +1,26 @@
+Compiling and upload the program on the Raspberry Pico 
+
+
+C:\Users\jgust\tinygo\programas\mcp3204>dir
+ O volume na unidade C não tem nome.
+ O Número de Série do Volume é 709A-B58F
+
+ Pasta de C:\Users\jgust\tinygo\programas\mcp3204
+
+25/01/2022  21:12    <DIR>          .
+25/01/2022  21:12    <DIR>          ..
+25/01/2022  23:03             2.225 main.go
+               1 arquivo(s)          2.225 bytes
+               2 pasta(s)   35.702.210.560 bytes disponíveis
+
+C:\Users\jgust\tinygo\programas\mcp3204>go mod init main.go
+go: creating new go.mod: module main.go
+go: to add module requirements and sums:
+        go mod tidy
+
+C:\Users\jgust\tinygo\programas\mcp3204>go mod tidy
+
+Press RESET button and LOAD Button. Then release RESET and LOAD Buttons to upload
+
+C:\Users\jgust\tinygo\programas\mcp3204>tinygo flash -target=pico main.go
+
