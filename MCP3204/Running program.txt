@@ -1,0 +1,27 @@
+Connect Rasp Pico Serial Port to USB/Serial interface (3.3V only) 
+
+Rasp Pico UART TX GPIO 0 (PIN 1) ===> USB/Serial CP2102 (PIN RX) 
+Rasp Pico UART RX GPIO 1 (PIN 2) ===> USB/Serial CP2102 (PIN TX) 
+Rasp Pico GND (PIN 3)            ===> USB/Serial CP2102 (PIN GND) 
+
+Arduino IDE Console - 115200 Bps (use any Terminal program) 
+Select USB/Serial interface COM Port
+
+Output at Console:
+
+
+ CH 1 =  +1.255789e+000
+ CH 1 =  +1.244612e+000
+ CH 1 =  +1.244612e+000
+ CH 1 =  +1.251797e+000
+ CH 1 =  +1.250998e+000
+ CH 1 =  +1.251797e+000
+ CH 1 =  +1.250998e+000
+ CH 1 =  +1.257385e+000
+ CH 1 =  +1.244612e+000
+ CH 1 =  +1.257385e+000
+ CH 1 =  +1.250998e+000
+ CH 1 =  +1.249402e+000
+
+
+ 
