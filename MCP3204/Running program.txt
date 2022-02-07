@@ -7,7 +7,7 @@ Rasp Pico GND (PIN 3)            ===> USB/Serial CP2102 (PIN GND)
 Arduino IDE Console - 115200 Bps (use any Terminal program) 
 Select USB/Serial interface COM Port
 
-Output at Console:
+Output at Console (using a 10 K Potentiometer at ADC Input) 
 
 
  CH 1 =  +1.255789e+000
