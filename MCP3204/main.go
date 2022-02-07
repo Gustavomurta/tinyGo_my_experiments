@@ -45,7 +45,7 @@ func main() {
 	cs.Configure(machine.PinConfig{Mode: machine.PinOutput})
 
 	machine.SPI0.Configure(machine.SPIConfig{
-		Frequency: 1000000, // clock 1 MHz
+		Frequency: 1000000, // SPI clock 1 MHz
 		Mode:      0})      // SPI modes 0,0 or 1,1
 
 	tx = make([]byte, 3) // 3 bytes command
