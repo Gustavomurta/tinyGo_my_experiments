@@ -72,10 +72,10 @@ func Read(channel int) (uint16, error) {
 	tx[2] = 0x00                 // byte not used
 
 	// receive ADC Data - first byte not used
-	cs.Low()
+	cs.Low()                                         // select ADC
 	machine.SPI0.Tx(tx, rx)
 	result = uint16((rx[1]&0x1F))<<8 + uint16(rx[2]) // second and third bytes
-	cs.High()
+	cs.High()                                        // deselect ADC
 
 	return result, nil
 }
