@@ -16,6 +16,7 @@ ref: tinygo/src/machine/board_pico.go
          SPIO_CS_PIN = GPIO 05 (PIN 03) ======> MCP3204 -CS  (PIN 08)
 	 
 	 MCP3204 VREF (13) =====> +3.3V (only voltages bellow 3.3V at ADC inputs!) 
+	 Rasp Pico GND ======> MCP3204 GND (do not forget this) 
 
 	SPI Modes : https://www.analog.com/en/analog-dialogue/articles/introduction-to-spi-interface.html
 */
