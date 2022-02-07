@@ -1,25 +1,21 @@
 
 /*
-
+Raspberry PICO - TinyGo experiment
 Connects to an MCP3204 ADC - 4 Channel SPI 12 bits ADC
 
- MCP3204 Datasheet:https://ww1.microchip.com/downloads/en/DeviceDoc/21298e.pdf
+MCP3204 Datasheet:https://ww1.microchip.com/downloads/en/DeviceDoc/21298e.pdf
 
-https://github.com/tinygo-org/tinygo/blob/release/src/examples/mcp3008/mcp3008.go
+Based on: github.com/tinygo-org/tinygo/blob/release/src/examples/mcp3008/mcp3008.go
 
-Default pins for SPI interface Bus 0 - Raspberry Pico
+Connections for SPI interface Bus 0 - Raspberry Pico
 ref: tinygo/src/machine/board_pico.go
 
-	SPI0_SCK_PIN = GPIO18
-	SPI0_SDO_PIN = GPIO19    Tx
-	SPI0_SDI_PIN = GPIO16    Rx
-
-Below is a list of GPIO pins corresponding to SPI0 bus on the rp2040:
-ref: tinygo/src/machine/machine_rp2040_spi.go
-
-    SI : 0, 4, 17  a.k.a RX and MISO (if rp2040 is master)
-    SO : 3, 7, 19  a.k.a TX and MOSI (if rp2040 is master)
-    SCK: 2, 6, 18
+	SPI0_SCK_PIN = GPIO 18 (PIN 24) ======> MCP3204 CLK  (PIN 11)
+     TX SPI0_SDO_PIN = GPIO 19 (PIN 25) ======> MCP3204 DIN  (PIN 09)  
+     RX SPI0_SDI_PIN = GPIO 16 (PIN 21) ======> MCP3204 DOUT (PIN 10)
+         SPIO_CS_PIN = GPIO 05 (PIN 03) ======> MCP3204 -CS  (PIN 08)
+	 
+	 MCP3204 VREF (13) =====> +3.3V (only voltages bellow 3.3V at ADC inputs!) 
 
 	SPI Modes : https://www.analog.com/en/analog-dialogue/articles/introduction-to-spi-interface.html
 */
@@ -34,8 +30,8 @@ import (
 
 // cs is the pin used for Chip Select (CS). Change to whatever is in use on your board.
 const (
-	cs   = machine.Pin(5) //  CS  GPIO5
-	vRef = 3.27           // VRef 3.27 Volts
+	cs   = machine.Pin(5) // Chip Select  GPIO5
+	vRef = 3.27           // VRef 3.27 Volts- reading with voltmeter
 )
 
 var (
