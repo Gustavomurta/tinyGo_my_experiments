@@ -54,8 +54,8 @@ func main() {
 	lsbVolt = vRef / 4096 // LSB unit in Volts
 
 	for {
-		val, _ = Read(1) // read Channel 1
-		println(" CH 0 = ", float32(val)*lsbVolt)
+		val, _ = Read(1) // read Channel 1 for example (options: 0 to 3) 
+		println(" CH 1 = ", float32(val)*lsbVolt)
 		time.Sleep(100 * time.Millisecond) // timeout 100 ms
 	}
 }
