@@ -1,8 +1,6 @@
 /*
 Connects to an MCP4922 - 12-Bit Dual Output DAC with SPI Interface
 
-C:\Users\jgust\tinygo\Raspberry Pico Tinygo MCP4922 2023_09_18.txt
-
 MCP4922 Datasheet: www.microchip.com/en-us/product/mcp4922
 
 Based on github:
