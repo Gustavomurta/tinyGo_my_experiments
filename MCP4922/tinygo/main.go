@@ -56,7 +56,7 @@ func main() {
 	tx = make([]byte, 2) // 2 bytes write data
 	rx = make([]byte, 2) // 2 bytes received data
 
-	// Sine table
+	// Raw table
 	raw_table := make([]uint16, raw_table_size)
 
 	// Table of values to be sent to DAC
