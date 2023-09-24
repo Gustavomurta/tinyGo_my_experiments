@@ -40,8 +40,7 @@ const (
 
 var (
 	tx         []byte
-	rx         []byte
-	sine_float float32
+	rx         []byte	
 	multiplier uint16
 	channelA   uint16
 	channelB   uint16
