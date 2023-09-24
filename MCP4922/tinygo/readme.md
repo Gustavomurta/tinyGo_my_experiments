@@ -5,7 +5,7 @@ MCP4922 Datasheet: www.microchip.com/en-us/product/mcp4922
 
 Based on github:
 
-.[tinygo-org/tinygo/src/examples/mcp3008/mcp3008.go](https://github.com/tinygo-org/tinygo/tree/731532cd2b6353b60b443343b51296ec0fafae09/src/examples/mcp3008)
+.[tinygo-org/tinygo/src/examples/mcp3008/](https://github.com/tinygo-org/tinygo/tree/731532cd2b6353b60b443343b51296ec0fafae09/src/examples/mcp3008)
 
 .[helgenodland/MCP4922-Arduino-SPI-Library/](https://github.com/helgenodland/MCP4922-Arduino-SPI-Library)
 
