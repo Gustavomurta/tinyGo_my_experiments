@@ -1,6 +1,10 @@
 
 Tinygo tests with MCP4922 using Raspberry Pico - waveform generator
 
+max frequency: 675 Hz (but using SPI DMA is bigger - another project as soon)  
+
+max SPI clock: 20 Mhz 
+
 MCP4922 - 12-Bit Dual Voltage Output Digital-to-Analog Converter with SPI Interface
 
 MCP4922 Datasheet:
