@@ -1,5 +1,5 @@
 
-Tinygo tests with MCP4922 using Raspberry Pico
+Tinygo tests with MCP4922 using Raspberry Pico - waveform generator
 
 MCP4922 - 12-Bit Dual Voltage Output Digital-to-Analog Converter with SPI Interface
 
