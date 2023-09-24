@@ -27,3 +27,11 @@ Connections for SPI interface Bus 0 - Raspberry Pico
  
 SPI Modes : [analog.com/en/analog-dialogue/articles/introduction-to-spi-interface.html](https://www.analog.com/en/analog-dialogue/articles/introduction-to-spi-interface.html)
 
+
+Press the Raspberry Pico boot button and connect the USB cable to your PC.
+
+To compile and save on Raspberry Pico, give the command below:
+
+tinygo flash -target=pico main.go
+
+
