@@ -30,7 +30,7 @@ SPI Modes : [analog.com/en/analog-dialogue/articles/introduction-to-spi-interfac
 
 Press the Raspberry Pico boot button and connect the USB cable to your PC.
 
-To compile and save on Raspberry Pico, give the command below:
+To compile and save on Raspberry Pico, use the command below:
 
 tinygo flash -target=pico main.go
 
