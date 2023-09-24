@@ -1,1 +1,1 @@
-Some Logic analyser captures - SPI Interface
+Some Logic analyzer captures - SPI Interface
