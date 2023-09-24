@@ -22,5 +22,5 @@ Connections for SPI interface Bus 0 - Raspberry Pico
 	MCP4922   VDD (pin 01) =====> +3.3V
 	Rasp Pico GND ======> MCP4922 GND - pin 12 (do not forget this)
  
-SPI Modes : analog.com/en/analog-dialogue/articles/introduction-to-spi-interface.html
+SPI Modes : [analog.com/en/analog-dialogue/articles/introduction-to-spi-interface.html](https://www.analog.com/en/analog-dialogue/articles/introduction-to-spi-interface.html)
 
