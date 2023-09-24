@@ -1,5 +1,5 @@
 
-Connects to an MCP4922 - 12-Bit Dual Output DAC with SPI Interface
+Connects Raspberry Pico to an MCP4922 - 12-Bit Dual Output DAC with SPI Interface
 
 MCP4922 Datasheet: www.microchip.com/en-us/product/mcp4922
 
