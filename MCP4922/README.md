@@ -7,4 +7,5 @@ MCP4922 Datasheet:
 https://www.microchip.com/en-us/product/mcp4922
 
 
-![MCP4922 sine wave F0029TEK](https://github.com/Gustavomurta/tinyGo_my_experiments/assets/4587366/fd7aaa7f-621f-4ff4-930a-e49f07babf01)
+
+![MCP4922 sine wave F0029TEK_red](https://github.com/Gustavomurta/tinyGo_my_experiments/assets/4587366/0b8a37f9-ebf7-4a92-ac07-141e25900fae)
