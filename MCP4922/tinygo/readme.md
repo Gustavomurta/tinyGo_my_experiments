@@ -9,7 +9,7 @@ Based on github:
 
 .[helgenodland/MCP4922-Arduino-SPI-Library/](https://github.com/helgenodland/MCP4922-Arduino-SPI-Library)
 
-.[pico-playground/audio/sine_wave/sine_wave.c](https://github.com/raspberrypi/pico-playground/tree/master/audio/sine_wave)
+.[pico-playground/audio/sine_wave/](https://github.com/raspberrypi/pico-playground/tree/master/audio/sine_wave)
 
 Connections for SPI interface Bus 0 - Raspberry Pico
 
