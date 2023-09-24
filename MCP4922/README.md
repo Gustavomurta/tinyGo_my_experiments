@@ -1,5 +1,5 @@
 
-Tinygo tests with MCP4922 using Raspberry Pico - waveform generator
+Tinygo tests with MCP4922 using Raspberry Pico - waveform generator (256 points)
 
 max frequency: 675 Hz (but using SPI DMA is bigger - another project as soon)  
 
