@@ -4,9 +4,9 @@ Connects to an MCP4922 - 12-Bit Dual Output DAC with SPI Interface
 MCP4922 Datasheet: www.microchip.com/en-us/product/mcp4922
 
 Based on github:
-tinygo-org/tinygo/blob/release/src/examples/mcp3008/mcp3008.go
-helgenodland/MCP4922-Arduino-SPI-Library/blob/master/MCP4922.cpp
-pico-playground/audio/sine_wave/sine_wave.c
+.tinygo-org/tinygo/blob/release/src/examples/mcp3008/mcp3008.go
+.helgenodland/MCP4922-Arduino-SPI-Library/blob/master/MCP4922.cpp
+.[pico-playground/audio/sine_wave/sine_wave.c](https://github.com/raspberrypi/pico-playground/tree/master/audio/sine_wave)
 
 Connections for SPI interface Bus 0 - Raspberry Pico
 
