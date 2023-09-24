@@ -27,6 +27,7 @@ Connections for SPI interface Bus 0 - Raspberry Pico
  
 SPI Modes : [analog.com/en/analog-dialogue/articles/introduction-to-spi-interface.html](https://www.analog.com/en/analog-dialogue/articles/introduction-to-spi-interface.html)
 
+Select Ramp, Triangle, Sine or Square Wave removing and adding remarks. 
 
 Press the Raspberry Pico boot button and connect the USB cable to your PC.
 
