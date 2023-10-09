@@ -6,6 +6,10 @@ Documentation for the machine package for the Pico:
 
 https://tinygo.org/docs/reference/microcontrollers/machine/pico/
 
+Do you want to learn Tinygo and Golang?
+
+https://github.com/Gustavomurta/tinyGo_my_experiments/tree/main
+
 
 Raspberry Pico - Tinygo my Experiments
 
