@@ -10,6 +10,8 @@ As the frequency is generated through CPU clock frequency dividers, the higher t
 
 If the chosen frequency is proportional to the CPU clock, you can obtain very good accuracy.
 
+In the future I will include programming to change the CPU clock, for better options.
+
 Gustavo Murta 2023/10/08
 
 References:
