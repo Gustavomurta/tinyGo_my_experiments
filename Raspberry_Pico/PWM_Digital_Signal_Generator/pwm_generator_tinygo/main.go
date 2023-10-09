@@ -1,5 +1,5 @@
 /*
-Digital Signal Generator - Two channels with control of the duty cycle
+Digital Signal Generator - Two ports with control of the duty cycle
 Raspberry Pico - Tinygo - PWM
 Gustavo Murta 2023/10/08
 
