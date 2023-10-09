@@ -28,7 +28,7 @@ Each channel can drive two PWM output signals, or measure the frequency or duty 
 
 This gives a total of up to 16 controllable PWM outputs. All 30 GPIO pins can be driven by the PWM block.
 
-Each PWM slice is equipped with the following:
+Each PWM Channel is equipped with the following:
 
 • 16-bit counter
 
