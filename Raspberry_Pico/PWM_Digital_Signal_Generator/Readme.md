@@ -2,6 +2,14 @@ Raspberry Pico - Tinygo - PWM
 
 Digital Signal Generator - with control of the duty cycle - 0 to 100% 
 
+Configure frequency in Hz / min: 4 Hz and max: 31.25 MHz
+
+But, some restrictions: 
+
+As the frequency is generated through CPU clock frequency dividers, the higher the frequency, the lower the precision.
+
+If the chosen frequency is proportional to the CPU clock, you can obtain very good accuracy.
+
 Gustavo Murta 2023/10/08
 
 References:
