@@ -9,3 +9,11 @@ https://tinygo.org/getting-started/install/
 TinyGo Documentation: 
 
 https://tinygo.org/docs/
+
+Golang download and install : 
+
+https://go.dev/doc/install
+
+Golang Documentation: 
+
+https://go.dev/doc/
