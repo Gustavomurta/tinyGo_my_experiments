@@ -14,6 +14,10 @@ In the future I will include programming to change the CPU clock, for better opt
 
 Gustavo Murta 2023/10/08
 
+go version go1.19.2 windows/amd64
+
+tinygo version 0.30.0 windows/amd64 (using go version go1.19.2 and LLVM version 16.0.1)
+
 References:
 
 https://github.com/tinygo-org/tinygo/blob/release/src/examples/pwm/pwm.go
