@@ -18,7 +18,9 @@ RP2040 Datasheet - A microcontroller by Raspberry Pi:
 
 https://datasheets.raspberrypi.com/rp2040/rp2040-datasheet.pdf
 
-Chapter 4.5. PWM ==================================================================
+==============================================================================
+
+Chapter 4.5. PWM 
 
 The RP2040 PWM block has 8 identical PWM Channels. 
 
