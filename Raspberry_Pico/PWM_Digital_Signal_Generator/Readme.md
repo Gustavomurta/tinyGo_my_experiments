@@ -57,6 +57,6 @@ In my program, I chose PWM Channel 2:
 
 pwm  = machine.PWM2  // PWM Channel 2
 
-pinA = machine.GPIO4 // GPIO4 (pin 06) =>  peripherals: PWM2 channel A
+pinA = machine.GPIO4 // GPIO4 (pin 06) =>  peripherals: PWM2 channel A output
 
-pinB = machine.GPIO5 // GPIO5 (pin 07) =>  peripherals: PWM2 channel B
+pinB = machine.GPIO5 // GPIO5 (pin 07) =>  peripherals: PWM2 channel B output
