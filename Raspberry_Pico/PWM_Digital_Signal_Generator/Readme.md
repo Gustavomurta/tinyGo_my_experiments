@@ -1,6 +1,6 @@
 Raspberry Pico - Tinygo - PWM 
 
-Digital Signal Generator - with control of the duty cycle
+Digital Signal Generator - with control of the duty cycle - 0 to 100% 
 
 Gustavo Murta 2023/10/08
 
