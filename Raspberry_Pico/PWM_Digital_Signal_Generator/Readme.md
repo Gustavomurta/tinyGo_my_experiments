@@ -6,7 +6,7 @@ Configure frequency in Hz / min: 4 Hz and max: 31.25 MHz
 
 But, some restrictions: 
 
-As the frequency is generated through CPU clock frequency dividers, the higher the frequency, the lower the precision.
+As the frequency is generated through CPU clock frequency dividers, the higher the frequency, the lower the precision (above 1 MHz). 
 
 If the chosen frequency is proportional to the CPU clock, you can obtain very good accuracy.
 
