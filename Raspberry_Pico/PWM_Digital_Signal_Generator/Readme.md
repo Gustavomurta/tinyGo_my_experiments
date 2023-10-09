@@ -36,6 +36,9 @@ Each PWM Channel is equipped with the following:
 
 • Two independent output channels, duty cycle from 0% to 100% inclusive
 
+![image](https://github.com/Gustavomurta/tinyGo_my_experiments/assets/4587366/1c36fbf7-9178-45a1-8fde-1f6a49b2d87b)
+
+
 
 ================================================================================
 
