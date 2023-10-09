@@ -4,6 +4,10 @@ Digital Signal Generator - with control of the duty cycle - 0 to 100%
 
 Gustavo Murta 2023/10/08
 
+RP2040 Datasheet - A microcontroller by Raspberry Pi:
+
+https://datasheets.raspberrypi.com/rp2040/rp2040-datasheet.pdf
+
 References:
 
 https://github.com/tinygo-org/tinygo/blob/release/src/examples/pwm/pwm.go
