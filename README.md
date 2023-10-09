@@ -10,7 +10,7 @@ TinyGo Documentation:
 
 https://tinygo.org/docs/
 
-Golang download and install : 
+Golang download and install (Windows, Linux and MacOS):
 
 https://go.dev/doc/install
 
