@@ -1,4 +1,11 @@
 
+Procedure to be done the first time only:
+
+. Press and hold the BOOTSEL button.
+
+. Connect the Raspberry Pico USB cable to your PC.
+
+. Release the BOOTSEL button. A Storage Device (like a pen drive) called RPI-RP2 will open.
 
 To compile and save to Raspberry Pico Microcontroller => tinygo flash -target=pico main.go
 
