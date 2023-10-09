@@ -26,6 +26,16 @@ Each channel can drive two PWM output signals, or measure the frequency or duty 
 
 This gives a total of up to 16 controllable PWM outputs. All 30 GPIO pins can be driven by the PWM block.
 
+Each PWM slice is equipped with the following:
+
+• 16-bit counter
+
+• 8.4 fractional clock divider
+
+• Two independent output channels, duty cycle from 0% to 100% inclusive
+
+
+================================================================================
 
 pwm  = machine.PWM2  // PWM Channel 2
 
