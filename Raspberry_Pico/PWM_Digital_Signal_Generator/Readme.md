@@ -39,6 +39,8 @@ Each PWM Channel is equipped with the following:
 
 ================================================================================
 
+In my program, I chose PWM Channel 2:
+
 pwm  = machine.PWM2  // PWM Channel 2
 
 pinA = machine.GPIO4 // GPIO4 (pin 06) =>  peripherals: PWM2 channel A
