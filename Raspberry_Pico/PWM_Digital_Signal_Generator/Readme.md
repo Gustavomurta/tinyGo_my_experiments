@@ -13,3 +13,10 @@ https://github.com/tinygo-org/tinygo/blob/release/src/examples/pwm/pico.go
 https://github.com/tinygo-org/tinygo/blob/release/src/machine/machine_rp2040.go
 
 https://github.com/tinygo-org/tinygo/blob/release/src/machine/machine_rp2040_pwm.go
+
+
+pwm  = machine.PWM2  // PWM Channel 2
+
+pinA = machine.GPIO4 // GPIO4 (pin 06) =>  peripherals: PWM2 channel A
+
+pinB = machine.GPIO5 // GPIO5 (pin 07) =>  peripherals: PWM2 channel B
