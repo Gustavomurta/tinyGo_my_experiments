@@ -2,6 +2,6 @@
 
 Go and Tinygo are fascinating! 
 
-Quick install guide (Windows, Linux, MacOS and Docker): 
+TinyGo quick install guide (Windows, Linux, MacOS and Docker): 
 
 https://tinygo.org/getting-started/install/
