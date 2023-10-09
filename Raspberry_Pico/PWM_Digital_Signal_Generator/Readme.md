@@ -1,6 +1,6 @@
 Raspberry Pico - Tinygo - PWM 
 
-Digital Signal Generator - with control of the duty cycle - 0 to 100% 
+Digital Signal Generator - two channels with control of the duty cycle - 0 to 100% 
 
 Configure frequency in Hz / min: 4 Hz and max: 31.25 MHz
 
