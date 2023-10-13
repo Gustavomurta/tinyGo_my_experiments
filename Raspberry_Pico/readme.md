@@ -1,4 +1,4 @@
-=== Tinygo - Raspberry Pico information: 
+== Tinygo - Raspberry Pico information: 
 
 https://tinygo.org/docs/reference/microcontrollers/pico/
 
