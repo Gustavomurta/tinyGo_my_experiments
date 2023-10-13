@@ -1,4 +1,4 @@
-Raspberry Pico - Tinygo - PWM 
+### Raspberry Pico - Tinygo - PWM 
 
 Digital Signal Generator - two ports with control of the duty cycle - 0 to 100% 
 
@@ -20,7 +20,7 @@ tinygo version 0.30.0 windows/amd64 (using go version go1.19.2 and LLVM version 
 
 ==============================================================================
 
-References:
+### References:
 
 https://github.com/tinygo-org/tinygo/blob/release/src/examples/pwm/pwm.go
 
@@ -36,7 +36,7 @@ https://datasheets.raspberrypi.com/rp2040/rp2040-datasheet.pdf
 
 ==============================================================================
 
-Chapter 4.5. PWM 
+### Chapter 4.5. PWM 
 
 The RP2040 PWM block has 8 identical PWM Channels. 
 
