@@ -49,3 +49,28 @@ C:\Users\jgust\tinygo\programas\Raspberry_Pico\i2c_interface\i2c_scanner>dir
 C:\Users\jgust\tinygo\programas\Raspberry_Pico\i2c_interface\i2c_scanner>
 
 ==========================================================================
+
+VS Code - Serial Monitor: 
+
+---- Reopened serial port COM9 ----
+
+Scanning I2C devices...
+
+I2C device found at address 0X40 (64) 
+
+I2C device found at address 0X40 (64) 
+
+I2C device found at address 0X40 (64) 
+
+---- Closed the serial port COM9 ----
+
+
+---- Opened the serial port COM9 ----
+
+No I2C devices found
+
+No I2C devices found
+
+No I2C devices found
+
+---- Closed the serial port COM9 ----
