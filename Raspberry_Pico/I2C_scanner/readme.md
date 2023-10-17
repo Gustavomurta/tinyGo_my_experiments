@@ -17,5 +17,5 @@ I2C Default pins on Raspberry Pico:
 * I2C0_SDA_PIN = GP4
 * I2C0_SCL_PIN = GP5
 
-*I2C1_SDA_PIN = GP2
-*I2C1_SCL_PIN = GP3
+* I2C1_SDA_PIN = GP2
+* I2C1_SCL_PIN = GP3
