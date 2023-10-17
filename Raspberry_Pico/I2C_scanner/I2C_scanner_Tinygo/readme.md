@@ -8,8 +8,11 @@ To compile and flash to Raspberry Pico:
 ================================================
 
 C:\Users\jgust\tinygo\programas\Raspberry_Pico\i2c_interface\i2c_scanner>go mod init main.go
+
 go: creating new go.mod: module main.go
+
 go: to add module requirements and sums:
+
         go mod tidy
 
 C:\Users\jgust\tinygo\programas\Raspberry_Pico\i2c_interface\i2c_scanner>go mod tidy
@@ -17,7 +20,9 @@ C:\Users\jgust\tinygo\programas\Raspberry_Pico\i2c_interface\i2c_scanner>go mod 
 C:\Users\jgust\tinygo\programas\Raspberry_Pico\i2c_interface\i2c_scanner>tinygo build -target=pico main.go
 
 C:\Users\jgust\tinygo\programas\Raspberry_Pico\i2c_interface\i2c_scanner>dir
+
  O volume na unidade C não tem nome.
+ 
  O Número de Série do Volume é 709A-B58F
 
  Pasta de C:\Users\jgust\tinygo\programas\Raspberry_Pico\i2c_interface\i2c_scanner
