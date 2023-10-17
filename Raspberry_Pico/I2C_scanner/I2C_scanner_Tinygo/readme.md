@@ -1,4 +1,13 @@
 
+
+The go mod init command creates a go.mod file to track your code's dependencies.
+
+* go mod init main.go
+
+go mod tidy ensures that the go.mod file matches the source code in the module.
+
+* go mod tidy
+
 To compile program: 
 * tinygo build -target=pico main.go
 
