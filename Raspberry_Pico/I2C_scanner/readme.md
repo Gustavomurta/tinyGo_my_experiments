@@ -1,4 +1,4 @@
-I2C Scanner for TinyGo - Raspberry Pico
+## I2C Scanner for TinyGo - Raspberry Pico
 Tool to verify the correct functioning of the I2C interface and identify the addresses of I2C devices.
 
 Inspired by: https://playground.arduino.cc/Main/I2cScanner/
