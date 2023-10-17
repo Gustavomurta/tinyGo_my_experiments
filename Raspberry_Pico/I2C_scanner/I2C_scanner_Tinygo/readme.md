@@ -50,7 +50,7 @@ C:\Users\jgust\tinygo\programas\Raspberry_Pico\i2c_interface\i2c_scanner>
 
 ==========================================================================
 
-VS Code - Serial Monitor: 
+VS Code - Serial Monitor (Baud rate - 115200 Bps)
 
 ---- Reopened serial port COM9 ----
 
