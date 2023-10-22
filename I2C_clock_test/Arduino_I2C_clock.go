@@ -20,7 +20,7 @@ func main() {
 	avr.TWCR.Set((avr.TWCR_TWINT | avr.TWCR_TWSTA | avr.TWCR_TWEN))
 	//avr.TWCR.Set(avr.TWCR_TWINT)
 
-	for i := 0; i < 6; i++ {
+	for i := 0; i < 7; i++ {
 		writeByte(dataTest[i])
 	}
 }
