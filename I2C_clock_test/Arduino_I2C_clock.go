@@ -12,7 +12,7 @@ var (
 
 func main() {
 
-	avr.TWSR.ClearBits((avr.TWSR_TWPS0 | avr.TWSR_TWPS1))
+	avr.TWSR.ClearBits((avr.TWSR_TWPS0 | avr.TWSR_TWPS1))   // BUG correction
 	avr.TWBR.Set(uint8(((machine.CPUFrequency() / i2cFrequency) - 16) / 2))
 	avr.TWCR.Set(avr.TWCR_TWEN)
 
