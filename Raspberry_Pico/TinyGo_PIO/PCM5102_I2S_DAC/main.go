@@ -53,7 +53,7 @@ func main() {
 	if err != nil {
 		panic(err.Error())
 	}
-	i2sDAC.SetSampleFrequency(384000) // I2S BCK PCM5102 384KHz - 32 bits per sample
+	i2sDAC.SetSampleFrequency(384000) // I2S BCK PCM5102 384KHz(max) - 32 bits per sample
 
 	for {
 		for i := 0; i < (dacTableSize); i++ {
