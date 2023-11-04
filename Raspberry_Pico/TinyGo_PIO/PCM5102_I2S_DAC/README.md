@@ -2,6 +2,8 @@ Testing I2S DAC PCM5102 with Raspberry Pico
 
 Based on: **https://github.com/tinygo-org/pio/tree/main**
 
+Datasheet PCM5102: https://www.ti.com/lit/ds/symlink/pcm5102.pdf
+
 ```
 PS C:\Users\jgust\tinygo\programas\Raspberry_Pico\PCM5102> go mod init main.go
 go: creating new go.mod: module main.go
