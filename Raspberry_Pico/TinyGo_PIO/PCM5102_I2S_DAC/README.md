@@ -1,4 +1,4 @@
-Testing I2S interface with Raspberry Pico 
+Testing I2S DAC PCM5102 with Raspberry Pico 
 
 Based on: **https://github.com/tinygo-org/pio/tree/main**
 
