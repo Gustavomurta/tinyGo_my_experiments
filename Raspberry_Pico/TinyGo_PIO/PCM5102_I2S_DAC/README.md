@@ -13,7 +13,8 @@ go: found github.com/tinygo-org/pio/rp2-pio/piolib in github.com/tinygo-org/pio 
 PS C:\Users\jgust\tinygo\programas\Raspberry_Pico\PCM5102>
 ```
 
-
-`PS C:\Users\jgust\tinygo\programas\Raspberry_Pico\PCM5102> tinygo build -target=pico main.go
+```
+PS C:\Users\jgust\tinygo\programas\Raspberry_Pico\PCM5102> tinygo build -target=pico main.go
 PS C:\Users\jgust\tinygo\programas\Raspberry_Pico\PCM5102> tinygo flash -target=pico main.go
-PS C:\Users\jgust\tinygo\programas\Raspberry_Pico\PCM5102> `
+PS C:\Users\jgust\tinygo\programas\Raspberry_Pico\PCM5102> 
+```
