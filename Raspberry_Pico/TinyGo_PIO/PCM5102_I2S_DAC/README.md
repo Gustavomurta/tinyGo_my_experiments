@@ -1,5 +1,7 @@
 Testing I2S interface with Raspberry Pico 
 
+Based on: **https://github.com/tinygo-org/pio/tree/main**
+
 ```
 PS C:\Users\jgust\tinygo\programas\Raspberry_Pico\PCM5102> go mod init main.go
 go: creating new go.mod: module main.go
