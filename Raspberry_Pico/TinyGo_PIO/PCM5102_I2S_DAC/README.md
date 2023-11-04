@@ -1,6 +1,6 @@
 Testing I2S DAC PCM5102 with Raspberry Pico 
 
-Based on: **https://github.com/tinygo-org/pio/tree/main**
+Based on: https://github.com/tinygo-org/pio/tree/main
 
 Datasheet PCM5102: https://www.ti.com/lit/ds/symlink/pcm5102.pdf
 
