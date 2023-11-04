@@ -5,6 +5,7 @@ PS C:\Users\jgust\tinygo\programas\Raspberry_Pico\PCM5102> go mod init main.go
 go: creating new go.mod: module main.go
 go: to add module requirements and sums:
         go mod tidy
+
 PS C:\Users\jgust\tinygo\programas\Raspberry_Pico\PCM5102> go mod tidy
 go: finding module for package github.com/tinygo-org/pio/rp2-pio
 go: finding module for package github.com/tinygo-org/pio/rp2-pio/piolib
