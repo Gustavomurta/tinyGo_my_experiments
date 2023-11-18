@@ -8,6 +8,20 @@ MCP4922 - 12-Bit Dual Voltage Output Digital-to-Analog Converter with SPI Interf
 
 MCP4922 Datasheet: https://www.microchip.com/en-us/product/mcp4922
 
+```Connections for SPI interface Bus 2 - ESP32
+
+SPI_SCK_PIN = GPIO 18 =========> MCP4922 CLK  (PIN 04)
+SPI_SDO_PIN = GPIO 19 =========> MCP4922 SDI  (PIN 05)
+SPI_SDI_PIN = GPIO 23 =========> No connection
+SPI_CS_PIN = GPIO 05  ==========> MCP4922 -CS  (PIN 03)
+
+MCP4922 VREFA (pin 13) =====> +3.3V (only bellow 3,3V!)
+MCP4922 VREFB (pin 11) =====> +3.3V (only bellow 3,3V!)
+MCP4922 -SHDN (pin 09) =====> +3.3V
+MCP4922 -LDAC (pin 08) =====> GND
+MCP4922   VDD (pin 01) =====> +3.3V
+ESP32 GND ======> MCP4922 GND - pin 12 (do not forget this)```
+
 
 **Compiling and writing to ESP32:**
 
