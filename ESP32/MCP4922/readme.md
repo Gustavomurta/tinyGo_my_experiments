@@ -9,10 +9,10 @@ MCP4922 - 12-Bit Dual Voltage Output Digital-to-Analog Converter with SPI Interf
 MCP4922 Datasheet: https://www.microchip.com/en-us/product/mcp4922
 
 
-**Compiling and writing to ESP32: **
+**Compiling and writing to ESP32:**
 
-`PS C:\Users\jgust\tinygo\programas\esp32\spi_examples\mcp4922> **tinygo flash -target=esp32 main.go**
-esptool.py v4.6.2
+PS C:\Users\jgust\tinygo\programas\esp32\spi_examples\mcp4922> **tinygo flash -target=esp32 main.go**
+`esptool.py v4.6.2
 Serial port COM6
 Connecting....
 Chip is ESP32-D0WDQ6 (revision v1.0)
