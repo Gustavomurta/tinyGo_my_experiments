@@ -1,5 +1,7 @@
 Tinygo tests with MCP4922 using ESP32 - waveform generator (256 points)
 
+Waveforms: Ramp, Sine, Square and Triangle. 
+
 max frequency:  733 Hz 
 
 max SPI clock: 80 MHz !! (F apb clock)
