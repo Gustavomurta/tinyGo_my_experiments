@@ -52,7 +52,7 @@ func main() {
 	cs.Configure(machine.PinConfig{Mode: machine.PinOutput}) // configure CS pin of SPI Interface
 
 	machine.SPI.Configure(machine.SPI2, machine.SPIConfig{
-		Frequency: 4000000, // MAX SPI clock - 80 MHz
+		Frequency: 4000000, // MAX SPI clock - 80 MHz Tested!
 		SCK:       18,
 		SDO:       19,
 		SDI:       23,
