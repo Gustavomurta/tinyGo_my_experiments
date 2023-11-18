@@ -23,11 +23,12 @@ And the maximum frequency response on my Oscilloscope is 60 Mhz.
 
 **Doing some calculations:**
 
-```SPI Clock: 80 MHz 
+```
+SPI Clock: 80 MHz 
 SPI Data block period: 5.333 uS 
 T = Each Ramp has 256 points.   256 x 5.333 us = 0.001365248
-Freq = 1 / T     1 / 0.001365248 = 732,46 Hz```
-
+Freq = 1 / T     1 / 0.001365248 = 732,46 Hz
+```
 
 **With these calculations and visualizing the waveform, I can conclude that the SPI clock is actually 80 MHz!**
 
