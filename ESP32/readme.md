@@ -14,7 +14,7 @@ https://github.com/Gustavomurta/tinyGo_my_experiments/tree/main
 
 - MCP4922 - 12-Bit Dual Voltage Output Digital-to-Analog Converter with SPI Interface
 
-#### Compiling TinyGo with ESP32: 
+### Compiling TinyGo with ESP32: 
 
 **tinygo build -target=esp32-coreboard-v2 main.go**  (to compile) 
 
