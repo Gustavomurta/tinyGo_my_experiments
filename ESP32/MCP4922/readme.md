@@ -12,7 +12,7 @@ MCP4922 Datasheet: https://www.microchip.com/en-us/product/mcp4922
 **Compiling and writing to ESP32:**
 
 PS C:\Users\jgust\tinygo\programas\esp32\spi_examples\mcp4922> **tinygo flash -target=esp32 main.go**
-`
+```
 esptool.py v4.6.2
 Serial port COM6
 Connecting....
@@ -32,4 +32,4 @@ Hash of data verified.
 
 Leaving...
 Hard resetting via RTS pin...
-`
+```
