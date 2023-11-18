@@ -11,17 +11,17 @@ pico-playground/audio/sine_wave/sine_wave.c
 
 Connections for SPI interface Bus 2 - ESP32
 
-	SPI_SCK_PIN = GPIO 18 =========> MCP4922 CLK  (PIN 04)
-    SPI_SDO_PIN = GPIO 19 =========> MCP4922 SDI  (PIN 05)
-    SPI_SDI_PIN = GPIO 23 =========> No connection
-    SPI_CS_PIN = GPIO 05  ==========> MCP4922 -CS  (PIN 03)
+SPI_SCK_PIN = GPIO 18 =========> MCP4922 CLK  (PIN 04)
+SPI_SDO_PIN = GPIO 19 =========> MCP4922 SDI  (PIN 05)
+SPI_SDI_PIN = GPIO 23 =========> No connection
+SPI_CS_PIN = GPIO 05  ==========> MCP4922 -CS  (PIN 03)
 
-	MCP4922 VREFA (pin 13) =====> +3.3V (only bellow 3,3V!)
-	MCP4922 VREFB (pin 11) =====> +3.3V (only bellow 3,3V!)
-	MCP4922 -SHDN (pin 09) =====> +3.3V
-	MCP4922 -LDAC (pin 08) =====> GND
-	MCP4922   VDD (pin 01) =====> +3.3V
-	ESP32 GND ======> MCP4922 GND - pin 12 (do not forget this)
+MCP4922 VREFA (pin 13) =====> +3.3V (only bellow 3,3V!)
+MCP4922 VREFB (pin 11) =====> +3.3V (only bellow 3,3V!)
+MCP4922 -SHDN (pin 09) =====> +3.3V
+MCP4922 -LDAC (pin 08) =====> GND
+MCP4922   VDD (pin 01) =====> +3.3V
+ESP32 GND ======> MCP4922 GND - pin 12 (do not forget this)
 
 SPI Modes : analog.com/en/analog-dialogue/articles/introduction-to-spi-interface.html
 */
