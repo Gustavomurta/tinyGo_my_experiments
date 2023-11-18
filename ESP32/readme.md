@@ -26,7 +26,7 @@ https://github.com/espressif/esptool/releases/
 
 To be able to use it on Windows, I renamed the program to **esptool.py.exe**
 
-I found where the original tool was in Windows:
+I found where the original tool was in Windows (in my PC):
 
 C:\Users\jgust\AppData\Local\Programs\Python\Python312\Scripts
 
