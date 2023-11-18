@@ -1,8 +1,8 @@
 Tinygo tests with MCP4922 using ESP32 - waveform generator (256 points)
 
-max frequency:  Hz 
+max frequency:  733 Hz 
 
-max SPI clock:  MHz
+max SPI clock: 80 MHz !! (F apb clock)
 
 MCP4922 - 12-Bit Dual Voltage Output Digital-to-Analog Converter with SPI Interface
 
