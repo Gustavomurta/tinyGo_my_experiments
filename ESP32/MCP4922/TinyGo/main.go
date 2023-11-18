@@ -80,11 +80,11 @@ func main() {
 		raw_table[i] = uint16(2047 + 2048*math.Cos(float64(float32(i)*(2*math.Pi/raw_table_size)))) // sine wave table */
 
 		/* triangle wave
-		multiplier = 30
+		multiplier = 32          // 32 x 128 = 4096
 		if i < 128 {
 			raw_table[i] = uint16(i)
 		} else {
-			raw_table[i] = 256 - uint16(i)
+			raw_table[i] = 255 - uint16(i)
 		}
 
 		// square wave
