@@ -16,15 +16,15 @@ https://github.com/Gustavomurta/tinyGo_my_experiments/tree/main
 
 #### Compiling TinyGo with ESP32: 
 
-tinygo build -target=esp32-coreboard-v2 main.go  (to compile) 
+**tinygo build -target=esp32-coreboard-v2 main.go**  (to compile) 
 
-tinygo flash -target=esp32-coreboard-v2 main.go  (to compile and write to ESP32)
+**tinygo flash -target=esp32-coreboard-v2 main.go**  (to compile and write to ESP32)
 
 I copied the esptool program from this link:
 
 https://github.com/espressif/esptool/releases/
 
-To be able to use it on Windows, I renamed the program to esptool.py.exe
+To be able to use it on Windows, I renamed the program to **esptool.py.exe**
 
 I found where the original tool was in Windows:
 
