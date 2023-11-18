@@ -35,7 +35,7 @@ import (
 
 const (
 	cs                = machine.Pin(5)     //  SPI2_CS  ESP32-GPIO5
-	raw_table_size    = 256                // 256 values
+	raw_table_size    = 256                // 256 values  Max: 4096 values  (2^12)
 	DAC_config_chan_A = 0b0111000000000000 // CH A - Buffered - Gain 1X - OUT enabled
 	DAC_config_chan_B = 0b1111000000000000 // CH B - Buffered - Gain 1X - OUT enabled
 )
@@ -72,7 +72,7 @@ func main() {
 	for i := 0; i < (raw_table_size); i++ {
 
 		/* Ramp wave
-		multiplier = 15
+		multiplier = 16          // 16 x 256 = 4096
 		raw_table[i] = uint16(i) // ramp wave table*/
 
 		//Sine wave
@@ -88,7 +88,7 @@ func main() {
 		}
 
 		// square wave
-		multiplier = 15
+		multiplier = 16            // 16 x 256 = 4096
 		if i < 128 {
 			raw_table[i] = 256 // High level
 		} else {
