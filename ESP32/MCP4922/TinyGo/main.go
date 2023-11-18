@@ -34,7 +34,7 @@ import (
 )
 
 const (
-	cs                = machine.Pin(5)     //  SPI0_CS  PICO-GPIO5
+	cs                = machine.Pin(5)     //  SPI2_CS  PICO-GPIO5
 	raw_table_size    = 256                // 256 values
 	DAC_config_chan_A = 0b0111000000000000 // CH A - Buffered - Gain 1X - OUT enabled
 	DAC_config_chan_B = 0b1111000000000000 // CH B - Buffered - Gain 1X - OUT enabled
