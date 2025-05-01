@@ -1,7 +1,5 @@
 // go:generate pioasm -o go blink.pio blink_pio.go
 // https://github.com/tinygo-org/pio/tree/main/rp2-pio/examples/blinky
-// C:\Users\jgust\tinygo\programas\Raspberry_Pico\pio_tinygo\examples
-// tinygo build -target pico -size short -o build/test.uf2 ./blinky
 // tinygo flash -target pico
 
 package main
@@ -29,8 +27,8 @@ func main() {
 	println("Loaded program at", offset)
 
 	blinkPinForever(Pio.StateMachine(0), offset, machine.LED, 3, clockFreq)         // led on board - 3 Hz
-	blinkPinForever(Pio.StateMachine(1), offset, machine.GPIO6, 1000000, clockFreq) // GPIO6 - 4 Hz
-	blinkPinForever(Pio.StateMachine(2), offset, machine.GPIO11, 2000, clockFreq)   // GPIO11 - 1 Hz
+	blinkPinForever(Pio.StateMachine(1), offset, machine.GPIO6, 6, clockFreq) // GPIO6 - 4 Hz
+	blinkPinForever(Pio.StateMachine(2), offset, machine.GPIO11, 1, clockFreq)   // GPIO11 - 1 Hz
 }
 
 func blinkPinForever(sm pio.StateMachine, offset uint8, pin machine.Pin, freq uint, clockFreq uint) {
