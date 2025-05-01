@@ -26,8 +26,8 @@ func main() {
 	}
 	println("Loaded program at", offset)
 
-	blinkPinForever(Pio.StateMachine(0), offset, machine.LED, 3, clockFreq)         // led on board - 3 Hz
-	blinkPinForever(Pio.StateMachine(1), offset, machine.GPIO6, 6, clockFreq) // GPIO6 - 4 Hz
+	blinkPinForever(Pio.StateMachine(0), offset, machine.LED, 3, clockFreq)      // Led on board - 3 Hz
+	blinkPinForever(Pio.StateMachine(1), offset, machine.GPIO6, 4, clockFreq)    // GPIO6 - 4 Hz
 	blinkPinForever(Pio.StateMachine(2), offset, machine.GPIO11, 1, clockFreq)   // GPIO11 - 1 Hz
 }
 
@@ -35,5 +35,5 @@ func blinkPinForever(sm pio.StateMachine, offset uint8, pin machine.Pin, freq ui
 	blinkProgramInit(sm, offset, pin)
 	sm.SetEnabled(true)
 	println("Blinking", int(pin), "at", freq, "Hz")
-	sm.TxPut(uint32(clockFreq/(2*freq)) - 3) //
+	sm.TxPut(uint32(clockFreq/(2*freq)) - 3) // for frequency accuracy - PIO counter program takes 3 more cycles in total
 }
