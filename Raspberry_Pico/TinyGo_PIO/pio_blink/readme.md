@@ -1,3 +1,5 @@
+Raspberry Pico - testing frequency generation using PIO with TinyGo. 
+
 References:
 
 https://github.com/tinygo-org/pio/tree/main/rp2-pio/examples/blinky  (TinyGo version) 
