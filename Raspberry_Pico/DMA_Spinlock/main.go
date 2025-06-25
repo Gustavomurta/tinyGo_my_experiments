@@ -1,6 +1,6 @@
 /*
 Raspberry Pico 2 - RP2350 - teste de SRAM - DMA + Spinlock via SIO - Teste
-Gustavo Murta 2025/06/24
+Gustavo Murta 2025/06/24 with ChatGPT.
 tinygo version 0.37.0 windows/amd64 (using go version go1.24.2 and LLVM version 19.1.2)
 C:\Users\jgust\tinygo\programas\Raspberry_Pico\sram_pico2
 tinygo flash -target pico2 main.go
