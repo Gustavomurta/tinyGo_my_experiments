@@ -7,6 +7,16 @@ max SPI clock: 20 MHz
 
 **MCP4922 - 12-Bit Dual Voltage Output Digital-to-Analog Converter with SPI Interface**
 
+• Fast Settling Time of 4.5 µs
+
+• Selectable Unity or 2x Gain Output
+
+• External Voltage Reference Inputs
+
+• External Multiplier Mode
+
+• 2.7V to 5.5V Single-Supply Operation
+
 MCP4922 Datasheet:  https://www.microchip.com/en-us/product/mcp4922
 
 
