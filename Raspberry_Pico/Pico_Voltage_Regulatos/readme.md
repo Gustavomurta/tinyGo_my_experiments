@@ -1,4 +1,4 @@
-RP240 Datasheet.PDF
+RP240 Datasheet:
 
 https://datasheets.raspberrypi.com/rp2040/rp2040-datasheet.pdf
 
