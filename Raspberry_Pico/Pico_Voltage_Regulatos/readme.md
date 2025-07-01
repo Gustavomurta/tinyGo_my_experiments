@@ -1,3 +1,7 @@
+RP240 Datasheet.PDF
+
+https://datasheets.raspberrypi.com/rp2040/rp2040-datasheet.pdf
+
 **2.10. Core Supply Regulator**
 
 RP2040 includes an on-chip voltage regulator, allowing the digital core supply (DVDD) to be generated from an external,
