@@ -1,6 +1,7 @@
 
 
 ---- Opened the serial port COM6 ----
+
 Get PICO Voltage Regulators registers:
 
 VREG (Voltage Regulator) Register Value: 0x000010C1 
