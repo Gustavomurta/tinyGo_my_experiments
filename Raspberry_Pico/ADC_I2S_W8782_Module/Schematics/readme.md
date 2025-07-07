@@ -1,12 +1,12 @@
 
 **W8782 CONFIGURATION PINS:**
 
-In the WM8782 Datasheet: 
+In the WM8782 Datasheet:
 															
 ![image](https://github.com/user-attachments/assets/a0a38095-60a6-4d3b-bed7-6e5bb12f0a6d)
 
 
-For my tests (Master mode) - Is this Chinese chip a clone?
+For my tests (Master mode):
 															
 ![image](https://github.com/user-attachments/assets/e50d4a35-fb67-4c6e-b887-cd11dd324014)
 
