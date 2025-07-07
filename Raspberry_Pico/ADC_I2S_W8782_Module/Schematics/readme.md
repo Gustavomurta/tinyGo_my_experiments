@@ -1,8 +1,11 @@
 
 **W8782 CONFIGURATION PINS:**
 
+															
+	
+															
+![image](https://github.com/user-attachments/assets/e9354c83-65d5-41c9-b91b-0b282054fd6a)
 
-![image](https://github.com/user-attachments/assets/81cc3f01-ce95-4bdb-a868-176e3c905333)
 
 
 
