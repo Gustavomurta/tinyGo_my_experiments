@@ -9,3 +9,5 @@ The device also has a high pass filter to remove residual DC offsets. WM8782A of
 24-bit multi-bit sigma-delta ADC is used with 128x, 64x or 32x over-sampling, according to sample rate. Digital audio
 output word lengths from 16-24 bits and sampling rates from 8kHz to 192kHz are supported."
 
+
+![image](https://github.com/user-attachments/assets/fa347293-f1a7-42c5-8590-959c0cda30f9)
