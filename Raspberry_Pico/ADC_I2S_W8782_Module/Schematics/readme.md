@@ -3,7 +3,9 @@
 
 In the WM8782 Datasheet:
 															
-![image](https://github.com/user-attachments/assets/a0a38095-60a6-4d3b-bed7-6e5bb12f0a6d)
+
+![image](https://github.com/user-attachments/assets/eedbfa51-1048-4045-95e3-7a6ce711a798)
+
 
 
 For my tests (Master mode):
