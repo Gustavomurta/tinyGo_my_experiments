@@ -1,4 +1,4 @@
-W8782 Module - 24-bit 192 kHz Stereo ADC I2S
+**W8782 Module - 24-bit 192 kHz Stereo ADC I2S**
 
 The WM8782A is a high performance, low cost stereo audio ADC designed for recordable media applications.
 The device offers stereo line level inputs along with two control input pins (FORMAT, IWL) to allow operation of the
