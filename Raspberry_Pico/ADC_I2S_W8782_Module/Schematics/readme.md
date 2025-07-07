@@ -7,6 +7,9 @@
 
 
 
+![image](https://github.com/user-attachments/assets/32f6ba58-bea2-483b-be47-c9ddcee4eda3)
+
+
 The module is powered by the VCC pin with 5V. This module has two 3.3V voltage regulators. One for the analog part (AVDD) and one for the digital part (DVDD).
 
 Therefore the digital signals from the I2S interface are compatible with the Raspberry Pico (3.3V). They can be connected directly.
