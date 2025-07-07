@@ -1,5 +1,5 @@
 
-**W8782 CONFIGURATION PINS:**
+**WM8782 CONFIGURATION PINS:**
 
 In the WM8782 Datasheet:
 															
