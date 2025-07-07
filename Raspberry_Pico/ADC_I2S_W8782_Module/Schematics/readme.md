@@ -1,13 +1,9 @@
 
 **W8782 CONFIGURATION PINS:**
 
-PIN 07 - WORD LENGTH:  0=> 16 BITS   /  Z=> 24 BITS
 
-PIN08 - FSAMPEN:       0=> 48K       /  1=> 96K       /  Z=> 192K
+![image](https://github.com/user-attachments/assets/81cc3f01-ce95-4bdb-a868-176e3c905333)
 
-PIN09 - FORMAT : 0=> RIGHT JUSTIFIED / 1=> LEFT JUSTIFIED  / Z=> I2S 
-
-PIN20 - MODE SEL: 0=> SLAVE  /  1=> MASTER
 
 
 The module is powered by the VCC pin with 5V. This module has two 3.3V voltage regulators. One for the analog part (AVDD) and one for the digital part (DVDD).
