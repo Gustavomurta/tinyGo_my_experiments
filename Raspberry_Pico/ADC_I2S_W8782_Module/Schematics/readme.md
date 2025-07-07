@@ -7,7 +7,9 @@
 
 
 
-![image](https://github.com/user-attachments/assets/32f6ba58-bea2-483b-be47-c9ddcee4eda3)
+![image](https://github.com/user-attachments/assets/22dd715e-e34a-4a58-9567-ec4add3da20b)
+
+
 
 
 The module is powered by the VCC pin with 5V. This module has two 3.3V voltage regulators. One for the analog part (AVDD) and one for the digital part (DVDD).
