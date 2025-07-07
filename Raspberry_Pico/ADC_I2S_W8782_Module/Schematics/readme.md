@@ -14,4 +14,8 @@ The module is powered by the VCC pin with 5V. This module has two 3.3V voltage r
 
 Therefore the digital signals from the I2S interface are compatible with the Raspberry Pico (3.3V). They can be connected directly.
 
+**W8782 Module - ADC I2S - :** 
+
+Using reverse engineering, I created this schematic.
+
 ![image](https://github.com/user-attachments/assets/3c1b162c-6e4d-4e85-b12e-8f6e02dfb5c0)
