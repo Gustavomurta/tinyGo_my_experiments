@@ -9,7 +9,7 @@ Examples:
 Requested: 125.0 MHz
 Achieved:  125.0 MHz
 REFDIV:    1
-FBDIV:     125 (VCO = 1500.0 MHz)             x 12 MHz
+FBDIV:     125 (VCO = 1500.0 MHz)           125  x 12 MHz = 1500 MHz
 PD1:       6
 PD2:       2
 
