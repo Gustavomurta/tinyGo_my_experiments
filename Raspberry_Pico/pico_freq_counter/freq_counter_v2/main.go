@@ -52,7 +52,7 @@ func freq_count_kHz() {
 	freqCounterDelay := rp.CLOCKS.GetFC0_DELAY()
 	fmt.Printf("Delays the start of the frequency counting: %d \n", freqCounterDelay) // Delay is measured in multiples of the reference clock period
 
-	rp.CLOCKS.SetFC0_SRC(0x0B) // 0x01 → PLL_SYS_CLKSRC_PRIMARY / 0x02 → PLL_USB_CLKSRC_PRIMARY / 0x05 → XOSC_CLKSRC
+	rp.CLOCKS.SetFC0_SRC(0x01) // 0x01 → PLL_SYS_CLKSRC_PRIMARY / 0x02 → PLL_USB_CLKSRC_PRIMARY / 0x05 → XOSC_CLKSRC
 	// 0x08 → CLK_REF / 0x09 → CLK_SYS / 0x0b → CLK_USB /
 
 	for rp.CLOCKS.GetFC0_STATUS_DONE() == 0 {
