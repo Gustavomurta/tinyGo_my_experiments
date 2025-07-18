@@ -1,3 +1,47 @@
+
+**Use vcocalc.py to configure registers:**
+
+https://github.com/raspberrypi/pico-sdk/tree/master/src/rp2_common/hardware_clocks/scripts
+
+```
+Examples:
+
+Requested: 125.0 MHz
+Achieved:  125.0 MHz
+REFDIV:    1
+FBDIV:     125 (VCO = 1500.0 MHz)             x 12 
+PD1:       6
+PD2:       2
+
+Requested: 133.0 MHz
+Achieved:  133.0 MHz
+REFDIV:    1
+FBDIV:     133 (VCO = 1596.0 MHz)
+PD1:       6
+PD2:       2
+
+Requested: 150.0 MHz
+Achieved:  150.0 MHz
+REFDIV:    1
+FBDIV:     125 (VCO = 1500.0 MHz)
+PD1:       5
+PD2:       2
+
+Requested: 200.0 MHz
+Achieved:  200.0 MHz
+REFDIV:    1
+FBDIV:     100 (VCO = 1200.0 MHz)
+PD1:       6
+PD2:       1
+
+Requested: 240.0 MHz
+Achieved:  240.0 MHz
+REFDIV:    1
+FBDIV:     120 (VCO = 1440.0 MHz)
+PD1:       6
+PD2:       1
+```
+
 ```
 
 **Running tests with Raspberry Pico - RP2040:**
