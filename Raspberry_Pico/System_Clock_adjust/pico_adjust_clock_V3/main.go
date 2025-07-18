@@ -95,8 +95,7 @@ func pllSysRegisters() {
 
 	fmt.Println("Read PLL SYS Registers")
 
-	refClockDivider := rp.PLL_SYS.GetCS_REFDIV()
-	//refClockDivider := (pllSysControlStatus >> rp.PLL_CS_REFDIV_Pos) & rp.PLL_CS_REFDIV_Msk // Get the reference clock divider
+	refClockDivider := rp.PLL_SYS.GetCS_REFDIV()	
 	fmt.Printf("Reference Clock Divider Value: %d \n", refClockDivider)
 
 	pllSysFdbkDivisor := rp.PLL_SYS.FBDIV_INT.Get() // For XOSC=12 MHz Feedback divisor min=63, max=133
