@@ -7,3 +7,6 @@ The frequency counter measures the frequency of internal and external clocks by 
 test interval. 
 The interval is defined by counting cycles of clk_ref which must be driven either from XOSC or from a
 stable external source of known frequency.
+
+Reference:
+https://github.com/raspberrypi/pico-sdk/blob/master/src/rp2_common/hardware_clocks/clocks.c#L146-L175
