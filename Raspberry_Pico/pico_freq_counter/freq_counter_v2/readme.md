@@ -1,6 +1,6 @@
 
 
-**Running Pico Frequency Counter V2: **
+Running Pico Frequency Counter V2: 
 
 ```
 Raspberry Pico internal Frequency Counter V2: 
