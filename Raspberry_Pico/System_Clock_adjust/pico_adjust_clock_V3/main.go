@@ -1,5 +1,5 @@
 /*
-Raspberry Pico - RP2040 - overclock V3
+Raspberry Pico - RP2040 - pico_adjust_clock_V3
 Gustavo Murta 2025/07/17
 tinygo version 0.38.0 windows/amd64 (using go version go1.24.2 and LLVM version 19.1.2)
 C:\Users\jgust\tinygo\programas\Raspberry_Pico\cpu_clock_set
