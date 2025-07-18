@@ -10,10 +10,10 @@ stable external source of known frequency.
 
 **2.15.6.2. Using the frequency counter**
 To use the frequency counter, the programmer must:
-• Set the reference frequency: clk_ref
-• Set the mux position of the source they want to measure. See FC0_SRC
-• Wait for the DONE status bit in FC0_STATUS to be set
-• Read the result
+- Set the reference frequency: clk_ref
+- Set the mux position of the source they want to measure. See FC0_SRC
+- Wait for the DONE status bit in FC0_STATUS to be set
+- Read the result
 
 Reference:
 
