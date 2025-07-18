@@ -31,6 +31,8 @@ Feedback divider min=16, max=320
 VCO frequency min=750MHz, max=1600MHz
 
 https://github.com/tinygo-org/tinygo/blob/release/src/machine/machine_rp2_pll.go
+https://github.com/tinygo-org/tinygo/blob/release/src/machine/machine_rp2_adc.go
+https://github.com/tinygo-org/tinygo/blob/release/src/examples/temp/temp.go
 */
 
 package main
