@@ -45,7 +45,7 @@ PD2:       1
 **Running tests with Raspberry Pico - RP2040:**
 
 ```
-Raspberry Pico Overclock V3: 
+Raspberry Pico adjust_clock_V3: 
 Read Voltage Regulators Registers
 Voltage Regulator Register Value: 0x000010C1 
 Voltage Select = 0xC -> 1.15 V
