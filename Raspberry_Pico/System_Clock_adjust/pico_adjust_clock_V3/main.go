@@ -140,7 +140,7 @@ func main() {
 
 	machine.InitSerial()        // Initialize serial for debug output
 	time.Sleep(3 * time.Second) // Sleep to catch prints on serial
-	fmt.Printf("Raspberry Pico Overclock V3: \n")
+	fmt.Printf("Raspberry Pico adjust_clock_V3: \n")
 
 	vregRegisters() // Read Voltage Regulators Registers
 
