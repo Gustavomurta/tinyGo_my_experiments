@@ -1,5 +1,5 @@
 
-**Use vcocalc.py to configure registers:**
+**Use vcocalc.py to calculate registers:**
 
 https://github.com/raspberrypi/pico-sdk/tree/master/src/rp2_common/hardware_clocks/scripts
 
