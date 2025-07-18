@@ -19,7 +19,7 @@ Result of frequency measurement frac: 0
 ```
 Clock sent to frequency counter, set to 0 when not required.
 Writing to this register initiates the frequency count. 
-2.15.7. List of Registers (RP2040 Datasheet.pdf)
+ref: 2.15.7. List of Registers (RP2040 Datasheet.pdf)
 
 0x01 → PLL_SYS_CLKSRC_PRIMARY
 0x02 → PLL_USB_CLKSRC_PRIMARY
