@@ -1,6 +1,6 @@
 /*
 Dual Slope ADC Example for Raspberry Pi Pico - RP2040 - Version 9
-Gustavo Murta 2025_09_09
+Gustavo Murta 2025_09_09 - MIT license
 tinygo version 0.38.0 windows/amd64 (using go version go1.24.2 and LLVM version 19.1.2)
 C:\Users\jgust\tinygo\programas\Raspberry_Pico\Dual_Slope_ADC_Pico
 tinygo flash -target pico main.go
@@ -11,16 +11,10 @@ https://github.com/tinygo-org/tinygo/tree/release/src/examples/pininterrupt
 74HC4051 S1	= GPIO11
 Comparador Q1 = GPIO15 (entrada com interrupção)
 
+A4 - GND at input
 A5 - V input
 A6 - V Reference -2.500 V
 A7 - Reset Integrator
-
-"device/rp"
-	"fmt"
-	"machine"
-	"runtime/interrupt"
-	"time"
-	"device/arm"
 */
 
 package main
@@ -30,8 +24,7 @@ import (
 	"fmt"
 	"machine"
 	"time"
-	//"tinygo.org/x/tinygo/src/machine"
-	//"tinygo.org/x/tinygo/src/machine"
+	//"tinygo.org/x/tinygo/src/machine"	
 )
 
 var (
@@ -124,14 +117,14 @@ func gndInput() {
 }
 
 func zeroADC() {
-	rp.PPB.SetSYST_CVR_CURRENT(0) // Clear current value (24 bits)
+	rp.PPB.SetSYST_CVR_CURRENT(0) // Clear current value (24 bits) SysTick timer - max time 83 ns
 	resetIntegrator()             // Reset Integrator
 	gndInput()                    // zero Integrator
 	integVREF()                   // Integrate V REF
 }
 
 func dualSlopeADC() {
-	rp.PPB.SetSYST_CVR_CURRENT(0) // Clear current value (24 bits)
+	rp.PPB.SetSYST_CVR_CURRENT(0) // Clear current value (24 bits) SysTick timer - max time 83 ns
 	resetIntegrator()             // Reset Integrator
 	integVIN()                    // Integrate V Input
 	integVREF()                   // Integrate V REF
@@ -149,47 +142,45 @@ func main() {
 	time.Sleep(3 * time.Second) // Sleep to catch prints on serial
 	fmt.Printf("Dual Slope ADC RP2040 V9 \n")
 
-	// Configuração dos pinos do MUX
+	// MUX Address pins configuration
 	mux_S0.Configure(machine.PinConfig{Mode: machine.PinOutput})
 	mux_S1.Configure(machine.PinConfig{Mode: machine.PinOutput})
 
-	// Configuração do TPA
+	// Test Point A configuration 
 	tpA.Configure(machine.PinConfig{Mode: machine.PinOutput})
 
-	//testPointA() // Set GPIO13
-
-	// Configuração do pino do comparador com interrupção
+	// Comparator interrupt PIN configuration
 	comparatorPin.Configure(machine.PinConfig{Mode: machine.PinInputPullup}) //PinInputPullup
 	comparatorPin.SetInterrupt(machine.PinRising, adcComparatorISR)
 
 	cpuFreq := machine.CPUFrequency() // Get CPU frequency
-	fmt.Println("CPU Frequency:", int(cpuFreq), "Hz")
+	fmt.Println("CPU Frequency:", int(cpuFreq), "Hz")	
 
-	NANOSEC_PER_TICK := 1e9 / cpuFreq // Calculate nanoseconds per tick
-	fmt.Println("Nanoseconds per tick:", NANOSEC_PER_TICK)
+	nanoSECperTick := 1e9 / cpuFreq // Calculate nanoseconds per tick
+	fmt.Println("Nanoseconds per tick:", nanoSECperTick)
 
-	enableSysTick() // ativa o contador SysTick
+	enableSysTick() // enable SysTick Timer
 
 	for {
 
 		zeroADC()
 
 		if voltageRead {
-			comparatorPin.SetInterrupt(machine.PinRising, nil) // Disable interrupt to avoid multiple triggers - PinFalling
+			comparatorPin.SetInterrupt(machine.PinRising, nil) // Disable interrupt to avoid multiple triggers 
 
 			widthZero = startPeriod - endPeriod
 			//fmt.Printf("Zero Width: %d ticks \n", widthZero)
 
 			//time.Sleep(time.Millisecond * 20)                               // delay 20 ms
 			delayMSsystick(20e6 / 5)
-			comparatorPin.SetInterrupt(machine.PinRising, adcComparatorISR) // PinRising
+			comparatorPin.SetInterrupt(machine.PinRising, adcComparatorISR) // enable PinRising interrupt
 			voltageRead = false
 		}
 
 		dualSlopeADC()
 
 		if voltageRead {
-			comparatorPin.SetInterrupt(machine.PinRising, nil) // Disable interrupt to avoid multiple triggers - PinFalling
+			comparatorPin.SetInterrupt(machine.PinRising, nil) // Disable interrupt to avoid multiple triggers 
 
 			width = startPeriod - endPeriod
 			widthnS = width * 5 // 5 ns per tick
@@ -213,9 +204,10 @@ func main() {
 			fmt.Printf("Voltage: %.4f V\n", voltage)
 			//fmt.Printf("\n")
 
-			time.Sleep(time.Millisecond * 100)                              // delay 189 ms => 5 measurements/second
-			comparatorPin.SetInterrupt(machine.PinRising, adcComparatorISR) // PinRising
+			time.Sleep(time.Millisecond * 100)                              // delay 100 ms
+			comparatorPin.SetInterrupt(machine.PinRising, adcComparatorISR) // enable PinRising interrupt
 			voltageRead = false
 		}
 	}
 }
+
