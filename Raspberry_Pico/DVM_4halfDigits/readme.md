@@ -1,6 +1,6 @@
 **Digital Voltmeter with 4 ½ dígits.**
 
-Using Tinygo - easy, fast and amazing language to control microcontrollers. 
+Using **Tinygo** - easy, fast and amazing language to control microcontrollers. 
 
 Using an old technology, but still used in Voltmeters today - **Dual slope ADC**.
 The counter/timer uses the RP2040 processor clock frequency of 200 MHz. 
