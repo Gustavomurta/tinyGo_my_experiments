@@ -14,6 +14,6 @@ The same circuit is used in modern voltmeters.
 **I'm already getting measurements from 0 to 2,5000 V**. But the project is ongoing to improve performance.
 Currently the DVM measures positive voltages, but it could be implemented to measure negative voltages as well.
 
-Good reference for Dual Slope ADC at the end of the article. But I didn't use the **Analog Devices** circuit.
+Good reference for **Dual Slope ADC** at the end of the article. But I didn't use the **Analog Devices** circuit.
 https://wiki.analog.com/university/courses/electronics/electronics-lab-adc
 
