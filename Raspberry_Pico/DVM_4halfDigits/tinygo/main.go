@@ -9,7 +9,7 @@ https://github.com/tinygo-org/tinygo/tree/release/src/examples/pininterrupt
 
 74HC4051 S0	= GPIO10
 74HC4051 S1	= GPIO11
-Comparator Q1 = GPIO15 (interrupt input pin)
+Comparator Q1 VOUT = GPIO15 (interrupt input pin)
 
 A4 - GND at input
 A5 - V input
@@ -210,5 +210,6 @@ func main() {
 		}
 	}
 }
+
 
 
