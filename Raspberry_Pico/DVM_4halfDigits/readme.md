@@ -11,7 +11,7 @@ Therefore, the resolution is 5 nanoseconds. This allows for greater precision an
 The circuit was assembled with the Raspberry Pico - RP2040. 
 But it can be modified for the Raspberry Pico 2 including WIFI and Bluetooth - Raspberry Pico W.
 
-To vary the range of voltages to be measured, voltage dividers with precision resistors can be implemented. 
+To vary the range of voltages to be measured, voltage dividers with precision resistors can be implemented at input of the DVM. 
 The same circuit is used in modern voltmeters.
 
 **I'm already getting measurements from 0 to 2,5000 V**. But the project is ongoing to improve performance.
