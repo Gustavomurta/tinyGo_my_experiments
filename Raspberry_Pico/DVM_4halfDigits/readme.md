@@ -14,7 +14,7 @@ But it can be modified for the Raspberry Pico 2 including WIFI and Bluetooth - R
 To vary the range of voltages to be measured, voltage dividers with precision resistors can be implemented at input of the DVM. 
 The same circuit is used in modern voltmeters.
 
-**I'm already getting measurements from 0 to 2,5000 V**. But the project is ongoing to improve performance.
+**I'm already getting measurements from 0 to 2.5000 V**. But the project is ongoing to improve performance.
 Currently the DVM measures positive voltages, but it could be implemented to measure negative voltages as well.
 In the current version it is possible to take 5 measurements per second, but this can be improved.
 
