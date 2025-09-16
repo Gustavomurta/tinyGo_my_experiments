@@ -83,7 +83,7 @@ func resetIntegrator() {
 func integVIN() {
 	mux_S0.High()                  // MUX bit0
 	mux_S1.Low()                   // MUX bit1
-	delaySystick((10e6 / 5) - 240) // Read VIN 10 ms = ((10e6 / 5) - 240)
+	delaySystick((5e6 / 5) - 240) // Read VIN 10 ms = ((10e6 / 5) - 240)
 }
 
 // Phase III - Integrate - VREF
@@ -187,6 +187,7 @@ func main() {
 		}
 	}
 }
+
 
 
 
