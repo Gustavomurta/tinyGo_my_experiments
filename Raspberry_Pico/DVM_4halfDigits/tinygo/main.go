@@ -32,6 +32,8 @@ var (
 	tpA           = machine.GPIO13 // Test Point A
 
 	startPeriod, endPeriod = uint32(0), uint32(0)
+	calibrate              = uint32(350)            // calibration value to adjust voltage accuracy -350 (BEST)
+	interval               = time.Millisecond * 120 // interval between measurements in ms
 
 	autoZeroPeriod = uint32(0)
 
@@ -73,17 +75,17 @@ func testPointA() { // used only for testing with logic analyzer
 // Phase I - Reset Integrator
 // 74HC4051 - set Address 7 => Reset Integrator
 func resetIntegrator() {
-	mux_S0.High()            // MUX bit0
-	mux_S1.High()            // MUX bit1
-	delaySystick((10e6 / 5)) // Delay to Capacitor discharge 5 ms = ((5e6 / 5) - 125)
+	mux_S0.High()           // MUX bit0
+	mux_S1.High()           // MUX bit1
+	delaySystick((5e6 / 5)) // Delay to Capacitor discharge 5 ms - do not change
 }
 
 // Phase II - Integrate V Input
 // 74HC4051 - set Address 5 => Read VIN
 func integVIN() {
-	mux_S0.High()                  // MUX bit0
-	mux_S1.Low()                   // MUX bit1
-	delaySystick((5e6 / 5) - 240) // Read VIN 10 ms = ((10e6 / 5) - 240)
+	mux_S0.High()                        // MUX bit0
+	mux_S1.Low()                         // MUX bit1
+	delaySystick((10e6 / 5) - calibrate) // Read VIN 10 ms - do not change
 }
 
 // Phase III - Integrate - VREF
@@ -98,9 +100,9 @@ func integVREF() {
 // Phase IV - GND at Input - Auto Zero
 // 74HC4051 - set Address 4
 func gndInput() {
-	mux_S0.Low()           // MUX bit0
-	mux_S1.Low()           // MUX bit1
-	delaySystick(10e6 / 5) // auto Zero at VIN 10 ms = minimum time for zeroing
+	mux_S0.Low()                         // MUX bit0
+	mux_S1.Low()                         // MUX bit1
+	delaySystick((10e6 / 5) - calibrate) // auto Zero at VIN 10 ms - do not change
 }
 
 func autoZeroADC() { // read Zero Volts value
@@ -154,7 +156,7 @@ func main() {
 			comparatorPin.SetInterrupt(machine.PinRising, nil) // Disable interrupt to avoid multiple triggers
 
 			autoZeroPeriod = startPeriod - endPeriod                        // period of VIN = 0 Volts integration
-			time.Sleep(time.Millisecond * 20)                               // delay of 20 ms between measurements
+			delaySystick(22e6 / 5)                                          // delay of 20 ms between measurements - do not change
 			comparatorPin.SetInterrupt(machine.PinRising, adcComparatorISR) // enable PinRising interrupt
 			voltageRead = false
 		}
@@ -165,28 +167,31 @@ func main() {
 			comparatorPin.SetInterrupt(machine.PinRising, nil) // Disable interrupt to avoid multiple triggers
 
 			vrefPeriod = startPeriod - endPeriod // period of VREF integration
-			//vrefPeriodTime = vrefPeriod * 5      // VREF Period time * 5 ns per tick
+			// vrefPeriodTime = vrefPeriod * 5      // VREF Period time * 5 ns per tick
 
-			fmt.Printf("Auto Zero Period: %d ticks // ", autoZeroPeriod)
+			fmt.Printf("Calibration: %d // ", calibrate)
+			// fmt.Printf("Auto Zero Period: %d ticks // ", autoZeroPeriod)
 			voltageZero = float32(autoZeroPeriod) * 1.25e-6 // Auto zero voltage calculation
 			fmt.Printf("Voltage Auto Zero: %.3f V # ", voltageZero)
 
-			fmt.Printf("VREF Period: %d ticks // ", vrefPeriod)
-			//fmt.Printf("VREF Period Time: %d ns # ", vrefPeriodTime)
+			// fmt.Printf("VREF Period: %d ticks // ", vrefPeriod)
+			// fmt.Printf("VREF Period Time: %d ns # ", vrefPeriodTime)
 
 			// Calculation =>  VIN Voltage  = VIN period * (2.500 V / 2e6 ticks)
 
 			vinPeriod = (vrefPeriod - autoZeroPeriod) // period of VIN integration
-			vinPeriodTime = vinPeriod * 5             // VIN Period time * 5 ns per tick
-			voltage = float32(vinPeriod) * 1.25e-6    // VIN voltage calculation
+			// vinPeriodTime = vinPeriod * 5             // VIN Period time * 5 ns per tick
+			fmt.Printf("VIN Period: %d ticks // ", vinPeriod)
+			voltage = float32(vinPeriod) * 1.25e-6 // VIN voltage calculation
 			fmt.Printf("VIN Voltage: %.3f V\n", voltage)
 
-			time.Sleep(time.Millisecond * 125)                              // delay 125 ms => 5 measurements/second
+			time.Sleep(interval)                                            // delay 125 ms => 5 measurements/second
 			comparatorPin.SetInterrupt(machine.PinRising, adcComparatorISR) // enable PinRising interrupt
 			voltageRead = false
 		}
 	}
 }
+
 
 
 
