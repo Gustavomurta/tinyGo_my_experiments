@@ -21,3 +21,19 @@ In the current version it is possible to take 5 measurements per second, but thi
 Good reference for **Dual Slope ADC** at the end of the article. But I didn't use the **Analog Devices** circuit.
 https://wiki.analog.com/university/courses/electronics/electronics-lab-adc
 
+**Dual-Slope ADC**
+The Dual-Slope ADC (or a variant) is at the heart of many of the most accurate digital voltmeters. This architecture has a few useful characteristics: only a few precision components are required as most error sources cancel out, it can be configured to reject particular noise frequencies such as 50Hz or 60Hz line noise, and it is insensitive to high-frequency noise.
+
+<img width="500" height="261" alt="image" src="https://github.com/user-attachments/assets/5a9aa2d3-17cf-4f11-afbc-765fba1d9b4d" />
+
+Dual-Slope ADC structure
+
+The converter operates by applying the unknown input voltage to an integrator for a fixed time period (called “runup”), after which a known reference voltage, of opposite polarity to the input, is applied to the integrator (called “rundown”). Thus, the input voltage can be calculated from the reference voltage and the ratio of the rundown to runup times:
+
+Vin = Vref * (T_rundown/T_runup)
+
+<img width="500" height="384" alt="image" src="https://github.com/user-attachments/assets/a53ad6bb-165f-4c9d-8431-6e42d636e004" />
+
+Source: https://wiki.analog.com/university/courses/electronics/electronics-lab-adc
+
+
