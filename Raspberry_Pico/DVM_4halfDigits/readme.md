@@ -22,6 +22,7 @@ Good reference for **Dual Slope ADC** at the end of the article. But I didn't us
 https://wiki.analog.com/university/courses/electronics/electronics-lab-adc
 
 **Dual-Slope ADC**
+
 The Dual-Slope ADC (or a variant) is at the heart of many of the most accurate digital voltmeters. This architecture has a few useful characteristics: only a few precision components are required as most error sources cancel out, it can be configured to reject particular noise frequencies such as 50Hz or 60Hz line noise, and it is insensitive to high-frequency noise.
 
 <img width="500" height="261" alt="image" src="https://github.com/user-attachments/assets/5a9aa2d3-17cf-4f11-afbc-765fba1d9b4d" />
