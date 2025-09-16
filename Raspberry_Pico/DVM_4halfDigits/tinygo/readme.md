@@ -1,6 +1,6 @@
 
 
-Accessing the Raspberry Pico's serial/USB console using the Serial Debug Assistant program.
+Accessing the Raspberry Pico's serial/USB console using the **Serial Debug Assistant** program.
 
 https://apps.microsoft.com/detail/9nblggh43hdm?hl=pt-BR&gl=BR
 
