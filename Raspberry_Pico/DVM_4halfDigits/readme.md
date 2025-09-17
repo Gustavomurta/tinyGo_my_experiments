@@ -1,4 +1,4 @@
-#**Digital Voltmeter with 4 ½ dígits - Raspberry Pico**
+# **Digital Voltmeter with 4 ½ dígits - Raspberry Pico**
 
 Using **Tinygo** - easy, fast and amazing language to control microcontrollers. 
 
