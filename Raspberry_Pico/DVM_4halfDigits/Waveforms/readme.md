@@ -1,5 +1,6 @@
 
 CH1 - yellow - Output of Integrator - Operational Amplifier U3 
+
 CH2 - blue - Output of Comparator - Collector of Q1 transistor
 
 
