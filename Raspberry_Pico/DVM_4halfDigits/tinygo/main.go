@@ -1,5 +1,5 @@
 /*
-Dual Slope ADC Example for Raspberry Pi Pico - RP2040 - Version 10
+Dual Slope ADC Project for Raspberry Pi Pico - RP2040 - Version 10
 Gustavo Murta 2025_09_15
 tinygo version 0.39.0 windows/amd64 (using go version go1.25.1 and LLVM version 19.1.2)
 C:\Users\jgust\tinygo\programas\Raspberry_Pico\Dual_Slope_ADC_Pico
@@ -191,6 +191,7 @@ func main() {
 		}
 	}
 }
+
 
 
 
