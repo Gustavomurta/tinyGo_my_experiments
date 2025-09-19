@@ -18,6 +18,9 @@ The same circuit is used in modern voltmeters.
 Currently the DVM measures positive voltages, but it could be implemented to measure negative voltages as well.
 In the current version it is possible to take 5 measurements per second, but this can be improved.
 
+**Link of discusson of the project at Raspberry Pico Forum:**
+https://forums.raspberrypi.com/viewtopic.php?t=391945
+
 Good reference for **Dual Slope ADC** at the end of the article. But I didn't use the **Analog Devices** circuit.
 https://wiki.analog.com/university/courses/electronics/electronics-lab-adc
 
