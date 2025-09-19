@@ -19,7 +19,6 @@ Currently the DVM measures positive voltages, but it could be implemented to mea
 In the current version it is possible to take 5 measurements per second, but this can be improved.
 
 **Link to project discussion on Raspberry Pico Forum:**
-
 https://forums.raspberrypi.com/viewtopic.php?t=391945
 
 Good reference for **Dual Slope ADC** at the end of the article. But I didn't use the **Analog Devices** circuit.
