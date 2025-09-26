@@ -6,7 +6,9 @@ Rp2040 Processor features :
 • An ARMv6-M compliant 24-bit SysTick timer.
 
 A 24-bit SysTick system timer, extends the functionality of both the processor and the NVIC and provides:
+
 • A 24-bit system timer (SysTick).
+
 • Additional configurable priority SysTick interrupt.
 
 The SysTick timer uses a 1μs pulse as a clock enable. This is generated in the watchdog block as timer_tick. Accuracy
@@ -20,7 +22,9 @@ Systick timer frequency = 200 MHz (period = 5 ns)
 Maximum timer count = 16,777,216 * 5 ns =~ 83 miliseconds**
 
 **Therefore the timer is reset after each measurement process.**
+
 • func autoZeroADC() // read Zero Volts value
+
 • func dualSlopeADC() // read VIN voltage
 
 
