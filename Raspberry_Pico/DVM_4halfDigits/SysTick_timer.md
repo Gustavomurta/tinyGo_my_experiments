@@ -1,6 +1,6 @@
 **Some theory about Systick Timer (RP2040):**
 
-reference: https://datasheets.raspberrypi.com/rp20 ... asheet.pdf
+reference: [https://datasheets.raspberrypi.com/rp20 ... asheet.pdf](https://datasheets.raspberrypi.com/rp2040/rp2040-datasheet.pdf)
 
 Rp2040 Processor features :
 • An ARMv6-M compliant 24-bit SysTick timer.
