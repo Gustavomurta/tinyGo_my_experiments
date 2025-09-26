@@ -19,7 +19,9 @@ SYST_CALIB).
 **In my project I used the processor clock - 200 MHz.**
 
 **2 ^ 24 bits = 16,777,216 counts
+
 Systick timer frequency = 200 MHz (period = 5 ns)
+
 Maximum timer count = 16,777,216 * 5 ns =~ 83 miliseconds**
 
 **Therefore the timer is reset after each measurement process.**
