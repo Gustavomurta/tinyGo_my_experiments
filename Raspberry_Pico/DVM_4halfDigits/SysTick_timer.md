@@ -3,6 +3,7 @@
 reference: [https://datasheets.raspberrypi.com/rp20 ... asheet.pdf](https://datasheets.raspberrypi.com/rp2040/rp2040-datasheet.pdf)
 
 Rp2040 Processor features :
+
 • An ARMv6-M compliant 24-bit SysTick timer.
 
 A 24-bit SysTick system timer, extends the functionality of both the processor and the NVIC and provides:
