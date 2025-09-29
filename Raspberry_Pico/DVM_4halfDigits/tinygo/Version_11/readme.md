@@ -1,6 +1,6 @@
 
 ```
-Compiling this program with Tinygo:
+## Compiling this program with Tinygo:
 
 tinygo version 0.39.0 windows/amd64 (using go version go1.25.1 and LLVM version 19.1.2)
 
@@ -22,7 +22,7 @@ C:\Users\jgust\tinygo\programas\Raspberry_Pico\Dual_Slope_ADC_Pico\Version11>dir
 
 C:\Users\jgust\tinygo\programas\Raspberry_Pico\Dual_Slope_ADC_Pico\Version11>
 
-Programming the Raspberry Pico Flash Memory.
+## Programming the Raspberry Pico Flash Memory:
 
 C:\Users\jgust\tinygo\programas\Raspberry_Pico\Dual_Slope_ADC_Pico\Version11>tinygo flash -target pico main.go
 
