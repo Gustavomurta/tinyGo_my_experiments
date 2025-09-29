@@ -140,7 +140,7 @@ func main() {
 
 	machine.InitSerial()        // Initialize serial for debug output
 	time.Sleep(3 * time.Second) // Sleep to catch prints on serial
-	fmt.Printf("Dual Slope ADC RP2040 V10 \n")
+	fmt.Printf("Dual Slope ADC RP2040 V11 \n")
 
 	fmt.Printf("AC main period: %d ns\n", ACperiod)
 	fmt.Printf("LSB Voltage: %.9f V\n", voltageLSB)
@@ -154,12 +154,6 @@ func main() {
 
 	// Comparator pin configuration with interrupt
 	comparatorPin.Configure(machine.PinConfig{Mode: machine.PinInput}) // Set GPIO15 as input - interrupt pin
-
-	//cpuFreq := machine.CPUFrequency() // Get CPU frequency
-	//fmt.Println("CPU Frequency:", int(cpuFreq), "Hz")
-
-	//nanoSECperTicks := 1e9 / cpuFreq // Calculate nanoseconds per ticks
-	//fmt.Println("Nanoseconds per tick:", nanoSECperTicks)
 
 	processorClock() // Display processor clock and nanoseconds per tick
 
@@ -208,4 +202,5 @@ func main() {
 		}
 	}
 }
+
 
