@@ -4,7 +4,7 @@ Compiling this program with Tinygo:
 
 tinygo version 0.39.0 windows/amd64 (using go version go1.25.1 and LLVM version 19.1.2)
 
-C:\Users\jgust\tinygo\programas\Raspberry_Pico\Dual_Slope_ADC_Pico\Version11>**tinygo build -target pico main.go**
+C:\Users\jgust\tinygo\programas\Raspberry_Pico\Dual_Slope_ADC_Pico\Version11>tinygo build -target pico main.go
 
 C:\Users\jgust\tinygo\programas\Raspberry_Pico\Dual_Slope_ADC_Pico\Version11>dir
  O volume na unidade C não tem nome.
