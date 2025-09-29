@@ -21,4 +21,11 @@ C:\Users\jgust\tinygo\programas\Raspberry_Pico\Dual_Slope_ADC_Pico\Version11>dir
                2 pasta(s)   56.894.816.256 bytes disponíveis
 
 C:\Users\jgust\tinygo\programas\Raspberry_Pico\Dual_Slope_ADC_Pico\Version11>
+
+Programming the Raspberry Pico Flash Memory.
+
+C:\Users\jgust\tinygo\programas\Raspberry_Pico\Dual_Slope_ADC_Pico\Version11>tinygo flash -target pico main.go
+
+C:\Users\jgust\tinygo\programas\Raspberry_Pico\Dual_Slope_ADC_Pico\Version11>
+
 ```
