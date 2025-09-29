@@ -142,7 +142,7 @@ func main() {
 	time.Sleep(3 * time.Second) // Sleep to catch prints on serial
 	fmt.Printf("Dual Slope ADC RP2040 V11 \n")
 
-	fmt.Printf("AC main period: %d ns\n", ACperiod)
+	fmt.Printf("AC mains period: %d ns\n", ACperiod)
 	fmt.Printf("LSB Voltage: %.9f V\n", voltageLSB)
 
 	// MUX pins configuration - as output
@@ -202,5 +202,6 @@ func main() {
 		}
 	}
 }
+
 
 
