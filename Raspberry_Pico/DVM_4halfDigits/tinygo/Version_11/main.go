@@ -34,7 +34,7 @@ var (
 	ticks, nanoSECperTicks = uint32(0), uint32(0)
 	ACfrequency            = uint32(60)                           // AC main frequency 50 Hz or 60 Hz
 	ACperiod               = uint32(1e9 / ACfrequency)            // AC period in nanoseconds
-	voltageLSB             = float32(2.5) / float32(ACperiod/5.0) // voltage LSB calculation 7.5 nV for 60 Hz
+	voltageLSB             = float32(2.5) / float32(ACperiod/5.0) // voltage LSB calculation 750 nV for 60 Hz
 
 	calibrate = uint32(130e3) // calibration timer value to adjust voltage accuracy (130 us in nanoseconds)
 
@@ -208,3 +208,4 @@ func main() {
 		}
 	}
 }
+
