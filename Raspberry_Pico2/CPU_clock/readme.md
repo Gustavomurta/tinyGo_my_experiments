@@ -2,7 +2,7 @@ Raspberry Pico 2 - RP2350 - rp2350 CPU Clock configuration and temperature readi
 
 ```
 ---- Opened the serial port COM7 ----
-Raspberry Pico Overclock V3: 
+Raspberry Pico 2 CPU Clock config: 
 Read Power management Registers
 Power management VREG CTRL Value: 0x00008050 
 Voltage Regulator settings = 0x00B0 -> 1.10 V
