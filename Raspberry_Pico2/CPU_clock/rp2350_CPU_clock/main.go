@@ -3,7 +3,7 @@ Raspberry Pico 2 - RP2350 - rp2350 CPU Clock configuration and temperature readi
 Gustavo Murta 2026_05_23
 tinygo version 0.39.0 windows/amd64 (using go version go1.25.1 and LLVM version 19.1.2)
 C:\Users\jgust\tinygo\programas\Raspberry_Pico2\cpu_clock_set
-tinygo flash -target pico main.go
+tinygo flash -target pico2 main.go
 
 RP2350 Datasheet.pdf
 6.3. Core voltage regulator:
