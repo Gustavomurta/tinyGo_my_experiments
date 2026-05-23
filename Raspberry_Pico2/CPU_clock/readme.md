@@ -1,6 +1,6 @@
 Raspberry Pico 2 - RP2350 - rp2350 CPU Clock configuration and temperature reading
 
-'''
+"""
 ---- Opened the serial port COM7 ----
 Raspberry Pico Overclock V3: 
 Read Power management Registers
@@ -31,4 +31,4 @@ Core temperature: 17.29℃
 Core temperature: 17.29℃
 Core temperature: 19.16℃
 ---- Closed the serial port COM7 ----
-'''
+"""
