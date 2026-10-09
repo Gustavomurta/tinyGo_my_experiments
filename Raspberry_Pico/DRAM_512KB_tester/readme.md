@@ -1,6 +1,9 @@
 Raspberry Pico - RP2040 - DRAM tester 
+
 Dynamic Random Access Memory HM514800 - 512K words x 8 bits
+
 Project to develop knowledge regarding DRAM memory operation
+
 Memory manufactured in 1994, used in older laptops.
 
 - Access time = 70 ns
