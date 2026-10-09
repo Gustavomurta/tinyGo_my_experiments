@@ -1,4 +1,4 @@
-**Raspberry Pico - RP2040 - DRAM tester **
+**Raspberry Pico - RP2040 - DRAM tester**
 
 Dynamic Random Access Memory HM514800 - 512K words x 8 bits
 
